@@ -4,6 +4,8 @@ const Header = () => {
       <nav>
         <div className="navLogo">News<span className="navLogoColor">Media</span></div>
         {/*  */}
+        <div className="navContentDetails">
+        {/*  */}
         <form className="searchForm">
           <i className="ri-search-line"></i>
           <input type="search" placeholder="search" className="searchInput" />
@@ -19,7 +21,9 @@ const Header = () => {
           <div className="burger burgerOne"></div>
           <div className="burger burgerTwo"></div>
           <div className="burger burgerThree"></div>
-        </div>
+          </div>
+          {/*  */}
+          </div>
       </nav>
     </header>
   )

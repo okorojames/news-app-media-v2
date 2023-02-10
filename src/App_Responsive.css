@@ -1,0 +1,18 @@
+@media screen and (max-width: 992px){
+  nav{
+    flex-direction: column;
+  }
+  .navLogo{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .searchForm{
+    padding: .9rem .8rem;
+  }
+  .searchInput, .searchInput:active,.searchInput:focus,.searchInput:hover{
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+}
