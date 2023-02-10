@@ -21,6 +21,9 @@ body{
   background: var(--light-one);
   color: var(--dark-one);
 }
+header{
+  border-bottom: 1.5px solid var(--dark-one);
+}
 nav{
   display: flex;
   justify-content: space-between;
