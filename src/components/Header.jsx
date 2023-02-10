@@ -5,6 +5,7 @@ const Header = () => {
         <div className="navLogo">News<span className="navLogoColor">Media</span></div>
         {/*  */}
         <form className="searchForm">
+          <i className="ri-search-line"></i>
           <input type="search" placeholder="search" className="searchInput" />
         </form>
         {/*  */}

@@ -19,14 +19,28 @@ body{
   margin-bottom: 2rem;
   font-size: 1.8rem;
   background: var(--light-one);
+  color: var(--dark-one);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+}
+/*  */
+.hamburger{
+  cursor: pointer;
 }
 .burger{
   background: var(--dark-one);
   height: 3px;
-  width: 48px;
+  width: 40px;
   border-radius: 8px;
   margin-bottom: 8px;
   transition: all .6s ease-in-out;
+}
+.hamburger:hover .burger,.hamburger:active .burger{
+  margin-bottom: 6px;
 }
 .burger:last-child{
   margin-bottom: 0;
