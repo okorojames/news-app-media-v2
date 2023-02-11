@@ -24,6 +24,7 @@ body{
   color: var(--dark-one);
 }
 header{
+  margin-bottom: 5rem;
   border-bottom: 1.5px solid var(--dark-one);
 }
 nav{
@@ -123,4 +124,13 @@ nav{
 }
 .sideNavLink:first-child{
   margin-top: 7rem;
+}
+/*  */
+/*  */
+.mainContentFirstContext{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
 }
