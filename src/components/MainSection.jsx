@@ -1,14 +1,12 @@
-import '../mainSection.css'
-import imageOne from '../images/imgone.webp'
+import CarouselComponent from './CarouselComponent'
+
 const MainSection = () => {
   return (
     <div className="mainSectionContainer">
-      <div className="mainContentFirstContext">Trending</div>
-      <div className="mainSectionSecondContent">
-        <div className="twoColContent">
-          <img className="mainContentImage" src={imageOne} alt="" />
-        </div>
-      </div>
+      <div className="mainContentFirstContext" style={{marginBottom: '60px'}}>Trending</div>
+      {/* <div data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'> */}
+        <CarouselComponent />
+      {/* </div> */}
     </div>
   )
 }
