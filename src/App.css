@@ -16,6 +16,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  position: relative;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 2rem;
   font-size: 1.8rem;
@@ -30,13 +31,21 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 3rem 6rem;
-  gap: 4rem;
+  gap: 5rem;
 }
 .navContentDetails{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 6rem;
+}
+.navIconsHamburger{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
 }
 .navLogo{
   font-size: 2.4rem;
@@ -61,6 +70,7 @@ nav{
   font-size: 1.7rem;
 }
 .navIcons{
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +90,7 @@ nav{
   height: 3px;
   width: 40px;
   border-radius: 8px;
-  transition: all .3s ease-in-out;
+  transition: .3s;
 }
 .burgerTwo{
   margin-top: 10px;
@@ -89,4 +99,28 @@ nav{
 .hamburger:hover .burgerTwo,.hamburger:active .burgerTwo{
   margin-top: 6px;
   margin-bottom: 6px;
+}
+.sideNav{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  position: fixed;
+  right: 0;
+  top: 16.5%;
+  background: var(--light-one);
+  box-shadow: 7px 6px 16px var(--dark-three);
+  transition: all .6s;
+}
+.sideNavLink{
+  text-decoration: none;
+  color: var(--dark-one);
+}
+.sideNavLink:hover,.sideNavLink:active{
+  color: var(--dark-three);
+}
+.sideNavLink:first-child{
+  margin-top: 7rem;
 }

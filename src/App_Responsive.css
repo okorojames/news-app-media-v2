@@ -1,6 +1,7 @@
 @media screen and (max-width: 992px){
   nav{
     flex-direction: column;
+    padding: 2rem 4rem;
   }
   .navLogo{
     font-size: 3rem;
@@ -8,11 +9,20 @@
 }
 @media screen and (max-width: 768px){
   .searchForm{
-    padding: .9rem .8rem;
+    justify-content: flex-start;
+    padding: 1rem .8rem;
+    width: 100%;
   }
   .searchInput, .searchInput:active,.searchInput:focus,.searchInput:hover{
   border: none;
   outline: none;
   font-size: 1.4rem;
+}
+.navContentDetails{
+  flex-direction: column-reverse;
+  gap: 1.8rem;
+}
+.navIcons{
+  margin-left: 0;
 }
 }
