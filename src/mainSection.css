@@ -1,9 +1,10 @@
 .mainSectionContainer{
   padding: 0 6rem;
+  margin-bottom: 10rem;
 }
 .twoColContent{
   display: grid !important;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2fr 2.5fr;
   justify-items: center;
   align-items: start;
   gap: 4rem;
@@ -28,5 +29,23 @@
 .mainContextParagraph{
   font-size: 2rem;
   font-weight: 400;
+  opacity: .7;
+  margin-bottom: 1rem;
+}
+.mainContextFooter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+}
+.mainContextFooterParagraph{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.mainContextFooterParagraph p:first-child{
+  font-weight: 600;
+}
+.mainContextFooterParagraph p:last-child{
   opacity: .7;
 }
