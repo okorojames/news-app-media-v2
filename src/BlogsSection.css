@@ -9,7 +9,7 @@
   padding: 0 6rem;
 }
 .blogsCard{
-  width: 30rem;
+  /* width: 30rem; */
   cursor: pointer;
 }
 .blogCardH3{
@@ -50,6 +50,6 @@
     grid-template-columns: 1fr;
   }
   .blogsCard{
-    width: 40rem;
+    /* width: 40rem; */
   }
 }
