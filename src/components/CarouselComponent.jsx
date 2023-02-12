@@ -1,5 +1,5 @@
 import React from 'react'
-import imageOne from '../images/imgone.webp'
+import imageOne from '../images/img_2.webp'
 import imageTwo from '../images/person.webp'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
