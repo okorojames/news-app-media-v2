@@ -9,7 +9,6 @@
   padding: 0 6rem;
 }
 .blogsCard{
-  /* width: 30rem; */
   cursor: pointer;
 }
 .blogCardH3{
@@ -48,8 +47,5 @@
 @media screen and (max-width: 768px){
   .blogsSectionContainer{
     grid-template-columns: 1fr;
-  }
-  .blogsCard{
-    /* width: 40rem; */
   }
 }
