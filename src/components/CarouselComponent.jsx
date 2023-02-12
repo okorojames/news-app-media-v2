@@ -1,6 +1,8 @@
 import React from 'react'
 import imageOne from '../images/img_1.webp'
 import imageTwo from '../images/person.webp'
+import imageThree from '../images/img_6.webp'
+import imageFour from '../images/img_2.webp'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -39,7 +41,7 @@ const CarouselComponent = () => {
       </div>
       
       <div className="twoColContent">
-          <img className="mainContentImage" src={imageOne} alt="" />
+          <img className="mainContentImage" src={imageThree} alt="" />
           <div className="mainContentContext">
             <div className="categoryAndDate">Business, Travel &nbsp; &nbsp; <span className="categoryDate"> - {new Date().toLocaleDateString('en-us', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' })}</span></div>
             <h2 className="mainContextHeader">Your most unhappy customers are your greatest source of learning.</h2>
@@ -57,7 +59,7 @@ const CarouselComponent = () => {
       </div>
       
       <div className="twoColContent">
-          <img className="mainContentImage" src={imageOne} alt="" />
+          <img className="mainContentImage" src={imageFour} alt="" />
           <div className="mainContentContext">
             <div className="categoryAndDate">Business, Travel &nbsp; &nbsp; <span className="categoryDate"> - {new Date().toLocaleDateString('en-us', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' })}</span></div>
             <h2 className="mainContextHeader">Your most unhappy customers are your greatest source of learning.</h2>
