@@ -17,6 +17,7 @@ const PopularSectionCarousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        centerMode: true,
       };
   return (
     <div>
