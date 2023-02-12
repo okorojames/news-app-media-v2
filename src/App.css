@@ -18,7 +18,7 @@ html{
 body{
   position: relative;
   font-family: 'Rubik', sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
   font-size: 1.8rem;
   background: var(--light-one);
   color: var(--dark-one);
@@ -117,6 +117,7 @@ nav{
   background: var(--light-one);
   box-shadow: 7px 6px 16px var(--dark-three);
   transition: all .6s;
+  z-index: 999;
 }
 .sideNavLink{
   text-decoration: none;
@@ -136,4 +137,69 @@ nav{
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+}
+/*  */
+/*  */
+/*  */
+.mainSectionContainer{
+  padding: 0 6rem;
+  margin-bottom: 10rem;
+}
+.twoColContent{
+  display: grid !important;
+  grid-template-columns: 2fr 2.5fr;
+  justify-items: center;
+  align-items: start;
+  gap: 4rem;
+}
+.mainContentImage{
+  border-radius: 10px;
+}
+.categoryAndDate{
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.categoryDate{
+  font-weight: 400;
+  opacity: .7;
+}
+.mainContextHeader{
+  font-size: 4.4rem;
+  font-weight: 700;
+  opacity: .9;
+  margin-bottom: 1.5rem;
+}
+.mainContextParagraph{
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: .7;
+  margin-bottom: 1rem;
+}
+.mainContextFooter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+}
+.mainContextFooterParagraph{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.mainContextFooterParagraph p:first-child{
+  font-weight: 600;
+}
+.mainContextFooterParagraph p:last-child{
+  opacity: .7;
+}
+/*  */
+/*  */
+.popularSectionContainer{
+  padding: 0 6rem;
+}
+.popularSectionFirstContext{
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
 }
