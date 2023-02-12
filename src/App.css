@@ -16,6 +16,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  overflow-x: hidden;
   position: relative;
   font-family: 'Rubik', sans-serif;
   font-size: 1.8rem;
@@ -146,7 +147,7 @@ nav{
 }
 .twoColContent{
   display: grid !important;
-  grid-template-columns: 2fr 2.5fr;
+  grid-template-columns: 2fr 2.3fr;
   justify-items: center;
   align-items: start;
   gap: 4rem;
