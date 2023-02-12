@@ -4,6 +4,7 @@ import Header from './components/Header'
 import MainSection from './components/MainSection'
 import BlogsComponent from './components/BlogsComponent'
 import PopularSection from './components/PopularSection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <MainSection />
       <BlogsComponent />
-      <PopularSection/>
+      <PopularSection />
+      <Footer/>
     </div>
   )
 }

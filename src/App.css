@@ -18,7 +18,6 @@ html{
 body{
   position: relative;
   font-family: 'Rubik', sans-serif;
-  margin-bottom: 8rem;
   font-size: 1.8rem;
   background: var(--light-one);
   color: var(--dark-one);
@@ -202,4 +201,66 @@ nav{
   font-size: 3.2rem;
   font-weight: 500;
   margin-bottom: 6rem;
+}
+/*  */
+/*  */
+.footerFirstContext{
+  font-size: 3.2rem;
+  font-weight: 600;
+  opacity: .8;
+  margin-bottom: 1rem;
+}
+.footerForm{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.footerEmail{
+  width: 100%;
+  padding: 1rem 4rem 1rem .8rem;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+}
+.footerEmail:hover,.footerEmail:active,.footerEmail:focus,.footerEmail{
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1.8px var(--dark-three);
+}
+.footerFormBtn{
+  font-size: 2.2rem;
+  padding: .9rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background: var(--darl-two);
+  color: var(--light-one);
+  cursor: pointer;
+}
+.footerIcons{
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footerIcon{
+  font-size: 2.6rem;
+  background: var(--pure-light);
+  padding: 1rem;
+  box-shadow: 0 .6px 2px var(--dark-one);
+  border-radius: 10px;
+  color: var(--darl-two);
+  transition: all .5s;
+}
+.footerIcon:hover{
+  color: var(--light-one);
+  background: var(--dark-three);
+}
+.footerFinalContent{
+  color: var(--darl-two);
+  margin-bottom: 4rem;
 }
