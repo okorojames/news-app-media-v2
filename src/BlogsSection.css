@@ -13,6 +13,7 @@
 }
 .blogCardH3{
   transition: all .5s;
+  font-size: 1.6rem;
 }
 .blogsCard:hover .blogCardH3{
   color: var(--dark-three);
