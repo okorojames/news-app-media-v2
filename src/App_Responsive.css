@@ -24,6 +24,9 @@
   .twoColContent{
     grid-template-columns: 1fr;
   }
+  .mainSectionContainer,.blogsSectionContainer{
+    padding: 0 1.5rem;
+  }
 }
 @media screen and (max-width: 768px){
   .mainContextHeader{
