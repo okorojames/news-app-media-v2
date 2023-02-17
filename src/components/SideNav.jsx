@@ -1,6 +1,6 @@
 const SideNav = () => {
   return (
-    <div className="sideNav">
+    <div className="sideNav navToggle">
       <a href="#" className="sideNavLink">Home</a>
       <a href="#" className="sideNavLink">Categories</a>
       <a href="#" className="sideNavLink">Travel</a>

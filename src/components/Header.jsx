@@ -1,16 +1,14 @@
-import { useState, useRef } from "react"
+import { useState } from "react"
 import SideNav from './SideNav'
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
-  const navWrapper = useRef()
   function openNav() {
     setIsNavOpen(!isNavOpen)
-    navWrapper.classList.toggle('is-nav-open')
   }
   return (
     <header>
       <nav>
-        <div ref={navWrapper} className="navLogo">News<span className="navLogoColor">Media</span></div>
+        <div className="navLogo">News<span className="navLogoColor">Media</span></div>
         {/*  */}
         <div className="navContentDetails">
         {/*  */}

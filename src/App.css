@@ -112,7 +112,7 @@ nav{
   gap: 2rem;
   padding: 0 2rem;
   position: fixed;
-  right: 0;
+  right: -300%;
   top: 16.5%;
   background: var(--light-one);
   box-shadow: 7px 6px 16px var(--dark-three);
@@ -266,4 +266,11 @@ nav{
 .footerFinalContent{
   color: var(--darl-two);
   margin-bottom: 4rem;
+}
+/*  */
+/*  */
+/*  */
+.navToggle.sideNav{
+  right: 0;
+  transition: .6s;
 }
