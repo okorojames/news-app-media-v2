@@ -34,10 +34,7 @@ const Header = () => {
             </div>
           {/*  */}
         </div>
-        {isNavOpen ?
-          <SideNav />
-          :
-          false}
+          <SideNav isNavOpen={isNavOpen} />
       </nav>
     </header>
   )

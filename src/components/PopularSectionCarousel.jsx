@@ -8,7 +8,7 @@ import imageThree from '../images/img_4.webp'
 import imageFour from '../images/img_5.webp'
 import imageFive from '../images/img_6.webp'
 import imageSix from '../images/img_6.webp'
-const PopularSectionCarousel = () => {
+const PopularSectionCarousel = (newsData) => {
     let settings = {
         infinite: true,
         arrows:true,

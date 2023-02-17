@@ -6,7 +6,8 @@ import imgFive from '../images/img_5.webp'
 import imgSix from '../images/img_6.webp'
 import imgSeven from '../images/img_7.webp'
 import '../BlogsSection.css'
-const BlogCard = () => {
+const BlogCard = ({ newsData }) => {
+  console.log(newsData)
   return (
     <div className='blogsSectionContainer'>
       {/*  */}

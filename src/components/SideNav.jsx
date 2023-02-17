@@ -1,6 +1,6 @@
-const SideNav = () => {
+const SideNav = ({isNavOpen}) => {
   return (
-    <div className="sideNav navToggle">
+    <div className={`sideNav ${isNavOpen && 'navToggle'}`}>
       <a href="#" className="sideNavLink">Home</a>
       <a href="#" className="sideNavLink">Categories</a>
       <a href="#" className="sideNavLink">Travel</a>

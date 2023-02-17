@@ -270,7 +270,7 @@ nav{
 /*  */
 /*  */
 /*  */
-.navToggle.sideNav{
+.navToggle{
   right: 0;
   transition: .6s;
 }
