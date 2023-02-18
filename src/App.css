@@ -156,9 +156,13 @@ nav{
   border-radius: 10px;
 }
 .categoryAndDate{
+  display: flex;
+  align-items: center;
+  gap: .4rem;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  margin-top: .6rem;
 }
 .categoryDate{
   font-weight: 400;

@@ -7,10 +7,10 @@ import imgSix from '../images/img_6.webp'
 import imgSeven from '../images/img_7.webp'
 import '../BlogsSection.css'
 import BlogCard from './BlogCard'
-const BlogsComponent = () => {
+const BlogsComponent = ({newsData}) => {
   return (
-    <div style={{marginBottom: '8rem'}}>
-      <BlogCard/>
+    <div style={{ marginBottom: '8rem' }}>
+      {newsData && <BlogCard newsData={newsData}/>}
     </div>
   )
 }
