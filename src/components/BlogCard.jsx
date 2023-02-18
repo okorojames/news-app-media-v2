@@ -24,7 +24,7 @@ const BlogCard = ({ newsData }) => {
             <img src={imageOne} alt="" style={{ width: '50px', borderRadius: '50%' }} />
             <div className="mainContextFooterParagraph" style={{fontSize: '16px'}}>
                 <p>{news.source.name}</p>
-                <Link to={news.source.url} style={readMoreStyles}>Read More</Link>
+                <Link to={news.url} style={readMoreStyles}>Read More</Link>
             </div>
           </div>
         </div>

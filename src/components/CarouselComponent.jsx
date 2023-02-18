@@ -6,8 +6,15 @@ import imageFour from '../images/img_2.webp'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom'
 
-const CarouselComponent = ({newsData}) => {
+const CarouselComponent = ({ newsData }) => {
+   const readMoreStyles = {
+    textDecoration:  'none',
+    color: 'white',
+    background: 'red',
+    padding: '8px 16px',
+  }
 
   let settings = {
         infinite: true,
@@ -22,59 +29,22 @@ const CarouselComponent = ({newsData}) => {
   return (
     <div>
       <Slider {...settings}>
-        <div className="twoColContent">
-          <img className="mainContentImage" src={imageOne} alt="" />
+        {newsData.map((news)=>(    <div className="twoColContent">
+          <img className="mainContentImage" src={news.image? news.image:imageFour} alt="" />
           <div className="mainContentContext">
-            <div className="categoryAndDate">Business, Travel &nbsp; &nbsp; <span className="categoryDate"> - {new Date().toLocaleDateString('en-us', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' })}</span></div>
-            <h2 className="mainContextHeader">Your most unhappy customers are your greatest source of learning.</h2>
-            <div className="mainContextParagraph">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            <div className="categoryAndDate"><span className="categoryDate"> {news.publishedAt} </span></div>
+            <h2 className="mainContextHeader">{news.title}</h2>
+            <div className="mainContextParagraph">{news.description}
             </div>
             <div className="mainContextFooter">
               <img src={imageTwo} className="mainContextFooterImage" style={{width: '60px', borderRadius: '50%'}} />
               <div className="mainContextFooterParagraph">
-                <p>Segell Campell</p>
-                <p>CEO AND FOUNDER</p>
+                <p>{news.source.name}</p>
+                <Link to={news.url} style={readMoreStyles}>Read More</Link>
               </div>
             </div>
           </div>
-      </div>
-      
-      <div className="twoColContent">
-          <img className="mainContentImage" src={imageThree} alt="" />
-          <div className="mainContentContext">
-            <div className="categoryAndDate">Business, Travel &nbsp; &nbsp; <span className="categoryDate"> - {new Date().toLocaleDateString('en-us', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' })}</span></div>
-            <h2 className="mainContextHeader">Your most unhappy customers are your greatest source of learning.</h2>
-            <div className="mainContextParagraph">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-            </div>
-            <div className="mainContextFooter">
-              <img src={imageTwo} className="mainContextFooterImage" style={{width: '60px', borderRadius: '50%'}} />
-              <div className="mainContextFooterParagraph">
-                <p>Segell Campell</p>
-                <p>CEO AND FOUNDER</p>
-              </div>
-            </div>
-          </div>
-      </div>
-      
-      <div className="twoColContent">
-          <img className="mainContentImage" src={imageFour} alt="" />
-          <div className="mainContentContext">
-            <div className="categoryAndDate">Business, Travel &nbsp; &nbsp; <span className="categoryDate"> - {new Date().toLocaleDateString('en-us', { weekday: 'long', day: 'numeric', year: 'numeric', month: 'long' })}</span></div>
-            <h2 className="mainContextHeader">Your most unhappy customers are your greatest source of learning.</h2>
-            <div className="mainContextParagraph">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-            </div>
-            <div className="mainContextFooter">
-              <img src={imageTwo} className="mainContextFooterImage" style={{width: '60px', borderRadius: '50%'}} />
-              <div className="mainContextFooterParagraph">
-                <p>Segell Campell</p>
-                <p>CEO AND FOUNDER</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>))}
         </Slider>
     </div>
   )

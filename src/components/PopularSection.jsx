@@ -1,9 +1,9 @@
 import PopularSectionCarousel from "./PopularSectionCarousel"
-const PopularSection = () => {
+const PopularSection = ({newsData}) => {
   return (
     <div className="popularSectionContainer">
       <div className="popularSectionFirstContext">Popular</div>
-      <PopularSectionCarousel/>
+      {newsData && <PopularSectionCarousel newsData={newsData} />}
     </div>
   )
 }
