@@ -9,7 +9,6 @@ const BlogCard = ({ newsData }) => {
     background: 'red',
     padding: '8px 16px',
   }
-  console.log(newsData)
   return (
     <div className='blogsSectionContainer'>
 

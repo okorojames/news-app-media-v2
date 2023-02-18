@@ -13,8 +13,6 @@ function App() {
   async function getNewsData() {
     const res = await fetch('https://gnews.io/api/v4/search?q=example&apikey=bbd4b0414fbc6f900b187b1f042bfa6e')
     const data = await res.json()
-    console.log(data)
-    console.log(data.articles)
     setNewsData(data.articles)
   }
   useEffect(() => {

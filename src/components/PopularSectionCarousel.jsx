@@ -10,10 +10,9 @@ import imageFive from '../images/img_6.webp'
 import imageSix from '../images/img_6.webp'
 import { Link } from "react-router-dom";
 const PopularSectionCarousel = ({newsData}) => {
-  console.log(newsData)
   //
   // 
-     const readMoreStyles = {
+    const readMoreStyles = {
     textDecoration:  'none',
     color: 'white',
     background: 'red',
